@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p>Count is <span id="count"></span></p>
+        <button id="button">CLICK</button>
+    </div>
+
+    <script>
+        const Value = document.getElementById("count")
+        const Button = document.getElementById("button")
+
+        count = 0
+
+        // function updateCount(params) {
+        //     count = count +1
+        //     return count
+        // }
+
+        let Update = () => {
+            count = count +1
+            return count
+        }
+
+        Button.onclick = () => {
+            Value.innerHTML = Update()
+        }
+        
+
+    </script>
+</body>
+</html>

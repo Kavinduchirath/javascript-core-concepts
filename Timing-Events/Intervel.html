@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intervel</title>
+</head>
+<body>
+    <div id="" class="">
+        <p class="" id="timer"></p>
+    </div>
+    <div class="Timeout">
+        <button id="button">Time Out</button>
+    </div>
+
+    <script>
+        const timer = document.getElementById("timer")
+        function getTime(params) {
+            let time = new Date().toLocaleTimeString();
+            timer.textContent= time;
+        }
+        getTime();
+        setInterval(getTime,1000)
+    </script>
+
+</body>
+</html>
